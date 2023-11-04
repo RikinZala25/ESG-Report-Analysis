@@ -8,6 +8,7 @@
 
 ## _Dynamic Approach_
 1. Run Dynamic_Approach.ipynb and obtain the data from Symbol as an input.
+2. An Alternative Approach is used to obtain the same data because the previous one is getting a 404 error, Run Dynamic_Approach_v2.ipynb.
 
 ## _NLP Approach_
 1. Run NLP_Approach.ipynb and obtain the outputs with Inputs: Company Name, Symbol, Report Publish Year, and URL.
