@@ -12,3 +12,6 @@
 
 ## _NLP Approach_
 1. Run NLP_Approach.ipynb and obtain the outputs with Inputs: Company Name, Symbol, Report Publish Year, and URL.
+
+## _AplhaVantage Approach_
+1. Run Dynamic_Approach.ipynb and obtain the results for the same as per Dynamic Approach.
