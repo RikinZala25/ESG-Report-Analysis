@@ -3,6 +3,7 @@ FROM python:3.11-slim as python_build
 
 # Set environment variables
 ENV PYTHONUNBUFFERED 1
+ENV LD_LIBRARY_PATH=/usr/local/lib/python3.11
 
 # Copy requirements file and install dependencies
 COPY requirements.txt /app/requirements.txt
