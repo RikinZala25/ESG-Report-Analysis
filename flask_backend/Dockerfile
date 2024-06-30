@@ -2,12 +2,13 @@ FROM python:3.9-slim
 
 ENV PYTHONUNBUFFERED 1
 
-WORKDIR /app
-
 # Installing Java for Tika
-RUN apt update \
-    && apt install -y openjdk-11-jdk \
-    && apt clean;
+RUN apt-get update \
+    && apt-get upgrade -y \
+    && apt-get install -y openjdk-11-jdk \
+    && apt-get clean;
+
+WORKDIR /app
 
 COPY . /app
 
