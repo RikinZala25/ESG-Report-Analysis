@@ -4,7 +4,8 @@ ENV PYTHONUNBUFFERED 1
 
 WORKDIR /app
 
-RUN apt-get update --fix-missing \
+RUN set -x \
+    && apt-get update --fix-missing \
     && apt-get install -y openjdk-11-jdk \
     && apt-get clean;
 
