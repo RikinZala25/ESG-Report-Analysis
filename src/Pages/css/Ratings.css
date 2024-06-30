@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.rating-container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.rating-banner-container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.rating-banner {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    background: #fff;
+    padding: 0 20px;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-banner img {
+    background-color: #000;
+    margin: 0 50px;
+}
+
+.rating-banner-container .btn {
+    font-family: 'Poppins', sans-serif;
+    background: #00a8ff;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.rating-banner-container .select-btn {
+    width: 400px;
+}
+
+.rating-banner-container .btn:hover {
+    background: #0097e6;
+}
+
+.rating-container .title {
+    color: #00a8ff;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 40px 0;
+}
+
+.rating-container-tools {
+    display: flex;
+}
+
+.rating-cocktails-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin: 20px 5px;
+}
+
+.rating-cocktails-container .rating-cocktail-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.rating-cocktails-container .rating-cocktail-card:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.rating-cocktail-card .rating-cocktail-img {
+    height: 60px;
+    margin: 10px 100px;
+    object-fit: cover;
+    object-position: center;
+    background-color: #000;
+}
+
+.rating-cocktail-img-ad{
+    height: 70px;
+    margin: 10px 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.des-list {
+    list-style-position: inside;
+    list-style-type: circle;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.rating-cocktail-card .rating-cocktail-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.rating-cocktail-info .rating-cocktail-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+}
+
+.rating-cocktail-card .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00a8ff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.rating-cocktail-card .btn:hover {
+    background: #0097e6;
+}

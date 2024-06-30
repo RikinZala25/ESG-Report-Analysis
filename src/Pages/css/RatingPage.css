@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
+
+.rating-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rating-page-banner-container {
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.rating-page-banner {
+    background: #fff;
+    padding: 0 20px 20px;
+}
+
+.constitiuent-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.rating-page-banner h4 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.rating-page-banner h4 i {
+    font-family: 'Open Sans', sans-serif;
+    color: #D2B48C;
+}
+
+.constituent-table {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.constituent-table th,
+.constituent-table td {
+    padding: 5px 40px;
+    border: 1px;
+    text-align: left;
+    font-weight: 600;
+    font-size: large;
+}
+
+.constituent-table i {
+    font-family: 'Open Sans', sans-serif;
+    color: #D2B48C;
+}
+
+.risk-score-ranking-title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.rating-cocktail-img {
+    background-color: #000;
+    margin: -10px 50px;
+}
+
+.rating-page-banner-container .btn {
+    font-family: 'Poppins', sans-serif;
+    background: #00a8ff;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.rating-page-banner-container .select-btn {
+    width: 400px;
+}
+
+.rating-page-banner-container .btn:hover {
+    background: #0097e6;
+}
+
+.rating-page-container .title {
+    color: #00a8ff;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 40px 0;
+}
+
+.rating-page-container-tools {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-page-cocktails-container {
+    margin: 50px 30px;
+}
+
+.rating-page-cocktails-container .rating-page-cocktail-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.rating-page-cocktails-container .rating-page-cocktail-card:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.rating-page-cocktail-card .rating-page-cocktail-img {
+    height: 60px;
+    margin: 10px 100px;
+    object-fit: cover;
+    object-position: center;
+    background-color: #000;
+}
+
+.rating-page-cocktail-img-ad {
+    height: 70px;
+    margin: 10px 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content-text p {
+    text-align: center;
+}
+
+.rating-page-cocktail-card .rating-page-cocktail-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.rating-page-cocktail-info .rating-page-cocktail-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+}
+
+.rating-page-cocktail-card .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00a8ff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.rating-page-cocktail-card .btn:hover {
+    background: #0097e6;
+}
+
+.note-text {
+    text-align: center;
+}
+
+.btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #00a8ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0097e6;
+}
+
+.goBackBtn{
+    position: absolute;
+    top: 110px;
+}
+
+.cont-img{
+    margin: 30px 33px;
+}

@@ -1,0 +1,86 @@
+/* App container */
+.App {
+  text-align: center;
+}
+
+/* Header styles */
+.App-header {
+  color: black;
+  padding: 20px;
+}
+
+/* Title styles */
+.App-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Input field styles */
+input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+/* Button styles */
+
+/* Paragraph styles */
+p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* Symbol input field styles */
+input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+/* Result paragraph styles */
+.result {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.stocks-table {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.stocks-table th,
+.stocks-table td {
+  padding: 5px 40px;
+  border: 1px;
+  text-align: left;
+  font-weight: 600;
+  font-size: large;
+}
+
+.stocks-table i {
+  font-family: "Open Sans", sans-serif;
+  color: #d2b48c;
+}
+
+.final_predictions{
+  margin: 50px 0;
+}
+
+.disclaimer-text{
+  font-size: smaller;
+}
+
+.rating-banner-container-header {
+  padding: 20px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
