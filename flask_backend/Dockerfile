@@ -5,9 +5,9 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /app
 
 # Installing Java for Tika
-RUN apt-get update && \
-    apt-get install -y openjdk-11-jdk && \
-    apt-get clean;
+RUN apt update \
+    && apt install -y openjdk-11-jdk \
+    && apt clean;
 
 COPY . /app
 
