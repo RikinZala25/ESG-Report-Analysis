@@ -1,13 +1,12 @@
 FROM python:3.9-slim
-COPY --from=openjdk:8-jre-slim /usr/local/openjdk-8 /usr/local/openjdk-8
-
-ENV JAVA_HOME /usr/local/openjdk-8
-
-RUN update-alternatives --install /usr/bin/java java /usr/local/openjdk-8/bin/java 
 
 ENV PYTHONUNBUFFERED 1
 
 WORKDIR /app
+
+RUN apt-get update --fix-missing \
+    && apt-get install -y openjdk-11-jdk \
+    && apt-get clean;
 
 COPY . /app
 
