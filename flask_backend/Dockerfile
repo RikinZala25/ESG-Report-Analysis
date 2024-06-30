@@ -12,6 +12,9 @@ RUN pip install -r requirements.txt
 # Stage 2: Final image with OpenJDK and Python components
 FROM openjdk:11-slim
 
+# Set JAVA_HOME environment variable
+ENV JAVA_HOME /usr/local/openjdk-11
+
 # Copy Python dependencies from previous stage
 COPY --from=python_build /usr/local/lib/python3.11/site-packages/ /usr/local/lib/python3.11/site-packages/
 COPY --from=python_build /usr/local/bin /usr/local/bin
@@ -25,4 +28,4 @@ COPY . /app
 EXPOSE 80
 
 # Define command to run the application
-CMD ["python", "app.py"]
+CMD ["python", "server.py"]
