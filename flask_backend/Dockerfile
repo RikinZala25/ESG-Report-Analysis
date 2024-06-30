@@ -1,5 +1,5 @@
 # Stage 1: Build stage with Python dependencies
-FROM python:3.9-slim as python_build
+FROM python:3.11-slim as python_build
 
 # Set environment variables
 ENV PYTHONUNBUFFERED 1
@@ -7,13 +7,13 @@ ENV PYTHONUNBUFFERED 1
 # Copy requirements file and install dependencies
 COPY requirements.txt /app/requirements.txt
 WORKDIR /app
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Stage 2: Final image with OpenJDK and Python components
 FROM openjdk:11-slim
 
 # Copy Python dependencies from previous stage
-COPY --from=python_build /usr/local/lib/python3.9/site-packages/ /usr/local/lib/python3.9/site-packages/
+COPY --from=python_build /usr/local/lib/python3.11/site-packages/ /usr/local/lib/python3.11/site-packages/
 COPY --from=python_build /usr/local/bin /usr/local/bin
 
 # Set the working directory in the container
